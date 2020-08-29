@@ -5,6 +5,8 @@
 
 You can incrementally search for [Bootstrap Icons](https://icons.getbootstrap.com/) and paste it to front most app.
 
+<img alt="screencast" src="https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/main/utils/screenshots/screencast.gif" width="600">
+
 ## Installation
 
 Download **[Bootstrap-Icons.alfredworkflow](https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases)** and import to [Alfred](http://www.alfredapp.com/) (requires Powerpack).
@@ -20,7 +22,7 @@ See: https://github.com/ruedap/alfred-font-awesome-workflow/issues/119
 
 **Keyword** `bi`: Search through [Bootstrap Icons](https://icons.getbootstrap.com/).
 
-- `Enter`: Paste SVG code (**for coding HTML/CSS**)
+- `Enter`: Paste SVG code (e.g. code below)
 
 <!-- prettier-ignore-start -->
 ```html
@@ -32,13 +34,13 @@ See: https://github.com/ruedap/alfred-font-awesome-workflow/issues/119
 <!-- prettier-ignore-end -->
 
 - `Option + Enter`: Paste icon name (e.g. `bootstrap`)
-- `Command + Enter`: Open in browser (e.g. <https://icons.getbootstrap.com/icons/arrow-right-circle/>)
+- `Command + Enter`: Open icon page in browser (e.g. <https://icons.getbootstrap.com/icons/arrow-right-circle/>)
 
 ## Options
 
 **Disable pasting**: Turn off "Automatically paste to front most app" in Workflow's Preferences.
 
-![Disable pasting](https://github.com/ruedap/alfred-font-awesome-workflow/raw/master/screenshots/option-disable-pasting.png)
+![Disable pasting](https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/main/utils/screenshots/option-disable-pasting.png)
 
 ## Development
 
