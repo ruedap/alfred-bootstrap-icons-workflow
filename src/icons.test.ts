@@ -1,16 +1,11 @@
 import { getAllIcons, toResponseItem } from "./icons";
 
 test("toResponseItem()", () => {
-  const faIconObject = {
-    name: "font-awesome",
-    free: ["brands"],
-    label: "Font Awesome",
-    search: { terms: ["meanpath"] },
-    styles: ["brands"],
-    unicode: "f2b4",
+  const iconObject = {
+    name: "bootstrap",
   };
 
-  const actual = toResponseItem(faIconObject);
+  const actual = toResponseItem(iconObject);
   const expected = {
     uid: "font-awesome",
     title: "font-awesome",
