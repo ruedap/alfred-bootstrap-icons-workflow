@@ -6,6 +6,9 @@ const LIST_1: TIconObject = {
   title: "AAABBB",
   categories: ["111", "222"],
   tags: ["100", "200"],
+  svg: {
+    raw: "",
+  },
 };
 
 const LIST_2: TIconObject = {
@@ -13,6 +16,9 @@ const LIST_2: TIconObject = {
   title: "BBBCCC",
   categories: ["222", "444"],
   tags: ["200", "400"],
+  svg: {
+    raw: "",
+  },
 };
 
 const LIST_3: TIconObject = {
@@ -20,6 +26,9 @@ const LIST_3: TIconObject = {
   title: "CCCDDD",
   categories: ["333", "666"],
   tags: ["300", "600"],
+  svg: {
+    raw: "",
+  },
 };
 
 const LIST: TIconObject[] = [LIST_1, LIST_2, LIST_3];
