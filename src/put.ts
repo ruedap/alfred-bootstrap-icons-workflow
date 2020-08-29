@@ -8,6 +8,13 @@ const getIconObject = (query: Query): TIconObject | undefined => {
   return allIconsObject.find((icon) => icon.name === query);
 };
 
+export const putSvg = (query: Query): string | null => {
+  const icon = getIconObject(query);
+  if (!icon) return null;
+  const svg = JSON.parse(icon.svg.raw);
+  return svg;
+};
+
 export const putName = (query: Query): string | null => {
   const icon = getIconObject(query);
   if (!icon) return null;
