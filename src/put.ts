@@ -11,24 +11,11 @@ const getIconObject = (query: Query): TIconObject | undefined => {
 export const putName = (query: Query): string | null => {
   const icon = getIconObject(query);
   if (!icon) return null;
-  return `fa-${icon.name}`;
-};
-
-export const putCode = (query: Query): string | null => {
-  const icon = getIconObject(query);
-  if (!icon) return null;
-  return icon.unicode;
-};
-
-export const putRef = (query: Query): string | null => {
-  const icon = getIconObject(query);
-  if (!icon) return null;
-  const ref = String.fromCodePoint(parseInt(icon.unicode, 16));
-  return ref;
+  return `bi-${icon.name}`;
 };
 
 export const putUrl = (query: Query): string | null => {
   const icon = getIconObject(query);
   if (!icon) return null;
-  return `https://fontawesome.com/icons/${icon.name}`;
+  return `https://icons.getbootstrap.com/icons/${icon.name}/`;
 };
