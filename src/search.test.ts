@@ -1,72 +1,48 @@
 import { TIconObject } from "./assets/icons_object";
 import { search, toJson } from "./search";
 
-describe("search()", () => {
-  const list: TIconObject[] = [
-    // {
-    //   name: "AAABBB",
-    //   search: {
-    //     terms: ["111", "222", "333"],
-    //   },
-    //   unicode: "unicode",
-    //   label: "label",
-    //   free: ["free"],
-    // },
-    // {
-    //   name: "BBBCCC",
-    //   search: {
-    //     terms: ["222", "444", "666"],
-    //   },
-    //   unicode: "unicode",
-    //   label: "label",
-    //   free: ["free"],
-    // },
-    // {
-    //   name: "CCCDDD",
-    //   search: {
-    //     terms: ["333", "666", "999"],
-    //   },
-    //   unicode: "unicode",
-    //   label: "label",
-    //   free: ["free"],
-    // },
-  ];
+const LIST_1: TIconObject = {
+  name: "aaabbb",
+  title: "AAABBB",
+  categories: ["111", "222"],
+  tags: ["100", "200"],
+};
 
+const LIST_2: TIconObject = {
+  name: "bbbccc",
+  title: "BBBCCC",
+  categories: ["222", "444"],
+  tags: ["200", "400"],
+};
+
+const LIST_3: TIconObject = {
+  name: "cccddd",
+  title: "CCCDDD",
+  categories: ["333", "666"],
+  tags: ["300", "600"],
+};
+
+const LIST: TIconObject[] = [LIST_1, LIST_2, LIST_3];
+
+const KEYS = ["name", "title", "categories", "tags"];
+
+describe("search()", () => {
   test("empty query", () => {
-    const keys = ["name", "search.terms"];
     const query = "";
-    const actual = search(list, keys, query);
+    const actual = search(LIST, KEYS, query);
     const expected = [
       {
-        item: {
-          free: ["free"],
-          label: "label",
-          name: "AAABBB",
-          search: { terms: ["111", "222", "333"] },
-          unicode: "unicode",
-        },
+        item: LIST_1,
         refIndex: 0,
         score: 0,
       },
       {
-        item: {
-          free: ["free"],
-          label: "label",
-          name: "BBBCCC",
-          search: { terms: ["222", "444", "666"] },
-          unicode: "unicode",
-        },
+        item: LIST_2,
         refIndex: 1,
         score: 0,
       },
       {
-        item: {
-          free: ["free"],
-          label: "label",
-          name: "CCCDDD",
-          search: { terms: ["333", "666", "999"] },
-          unicode: "unicode",
-        },
+        item: LIST_3,
         refIndex: 2,
         score: 0,
       },
@@ -77,31 +53,18 @@ describe("search()", () => {
   });
 
   test("name key", () => {
-    const keys = ["name", "search.terms"];
     const query = "BBB";
-    const actual = search(list, keys, query);
+    const actual = search(LIST, KEYS, query);
     const expected = [
       {
-        item: {
-          free: ["free"],
-          label: "label",
-          name: "BBBCCC",
-          search: { terms: ["222", "444", "666"] },
-          unicode: "unicode",
-        },
+        item: LIST_2,
         refIndex: 1,
-        score: 0.001,
+        score: 0.000001,
       },
       {
-        item: {
-          free: ["free"],
-          label: "label",
-          name: "AAABBB",
-          search: { terms: ["111", "222", "333"] },
-          unicode: "unicode",
-        },
+        item: LIST_1,
         refIndex: 0,
-        score: 0.03,
+        score: 0.0009,
       },
     ];
 
@@ -109,70 +72,76 @@ describe("search()", () => {
     expect(actual).toStrictEqual(expected);
   });
 
-  test("search.terms key", () => {
-    const keys = ["name", "search.terms"];
-    const query = "666";
-    const actual = search(list, keys, query);
+  test("categories key", () => {
+    const query = "22";
+    const actual = search(LIST, KEYS, query);
     const expected = [
       {
-        item: {
-          free: ["free"],
-          label: "label",
-          name: "BBBCCC",
-          search: { terms: ["222", "444", "666"] },
-          unicode: "unicode",
-        },
-        refIndex: 1,
-        score: 2.220446049250313e-16,
+        item: LIST_1,
+        refIndex: 0,
+        score: 0.0005,
       },
       {
-        item: {
-          free: ["free"],
-          label: "label",
-          name: "CCCDDD",
-          search: { terms: ["333", "666", "999"] },
-          unicode: "unicode",
-        },
-        refIndex: 2,
-        score: 2.220446049250313e-16,
+        item: LIST_2,
+        refIndex: 1,
+        score: 0.0005,
       },
     ];
 
     expect(actual.length).toBe(2);
+    expect(actual).toStrictEqual(expected);
+  });
+
+  test("tags key", () => {
+    const query = "200";
+    const actual = search(LIST, KEYS, query);
+    const expected = [
+      {
+        item: LIST_1,
+        refIndex: 0,
+        score: 7.401486830834377e-17,
+      },
+      {
+        item: LIST_2,
+        refIndex: 1,
+        score: 7.401486830834377e-17,
+      },
+      {
+        item: LIST_3,
+        refIndex: 2,
+        score: 0.1111111111111111,
+      },
+    ];
+
+    expect(actual.length).toBe(3);
+    // FIXME: Is this correct?
     expect(actual).toStrictEqual(expected);
   });
 });
 
 describe("toJson()", () => {
-  xtest("", () => {
+  test("3 results", () => {
     const searchResult = [
       {
-        item: {
-          free: ["free"],
-          label: "label",
-          name: "BBBCCC",
-          search: { terms: ["222", "444", "666"] },
-          unicode: "unicode",
-        },
-        refIndex: 1,
-        score: 0.001,
+        item: LIST_1,
+        refIndex: 0,
+        score: 7.401486830834377e-17,
       },
       {
-        item: {
-          free: ["free"],
-          label: "label",
-          name: "AAABBB",
-          search: { terms: ["111", "222", "333"] },
-          unicode: "unicode",
-        },
-        refIndex: 0,
-        score: 0.03,
+        item: LIST_2,
+        refIndex: 1,
+        score: 7.401486830834377e-17,
+      },
+      {
+        item: LIST_3,
+        refIndex: 2,
+        score: 0.1111111111111111,
       },
     ];
-    // const actual = toJson(searchResult);
-    // const expected =
-    //   '{"items":[{"uid":"BBBCCC","title":"BBBCCC","subtitle":"Paste class name: fa-BBBCCC","arg":"BBBCCC","icon":{"path":"./icons/BBBCCC.png"}},{"uid":"AAABBB","title":"AAABBB","subtitle":"Paste class name: fa-AAABBB","arg":"AAABBB","icon":{"path":"./icons/AAABBB.png"}}]}';
+    const actual = toJson(searchResult);
+    const expected =
+      '{"items":[{"uid":"aaabbb","title":"aaabbb","subtitle":"Paste class name: bi-aaabbb","arg":"aaabbb","icon":{"path":"./icons/aaabbb.png"}},{"uid":"bbbccc","title":"bbbccc","subtitle":"Paste class name: bi-bbbccc","arg":"bbbccc","icon":{"path":"./icons/bbbccc.png"}},{"uid":"cccddd","title":"cccddd","subtitle":"Paste class name: bi-cccddd","arg":"cccddd","icon":{"path":"./icons/cccddd.png"}}]}';
 
-    // expect(actual).toStrictEqual(expected);
+    expect(actual).toStrictEqual(expected);
   });
 });
