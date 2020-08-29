@@ -6,6 +6,9 @@ export type TIconObject = Readonly<{
   categories: string[];
   tags: string[];
   layout?: string;
+  svg: {
+    raw: string;
+  };
 }>;
 
 export const getAllIconsObject = (): TIconObject[] => {
