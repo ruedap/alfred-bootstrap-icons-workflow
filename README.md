@@ -1,7 +1,7 @@
 # Bootstrap Icons workflow for Alfred
 
-[![Latest Version](http://img.shields.io/github/release/ruedap/bootstrap-icons-workflow.svg?style=flat-square)](https://github.com/ruedap/bootstrap-icons-workflow/releases)
-[![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://ruedap.mit-license.org/2015)
+[![Latest Version](http://img.shields.io/github/release/ruedap/alfred-bootstrap-icons-workflow.svg?style=flat-square)](https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/ruedap/alfred-bootstrap-icons-workflow/blob/main/LICENSE.md)
 
 You can incrementally search for [Bootstrap Icons](https://icons.getbootstrap.com/) and paste it to front most app.
 
