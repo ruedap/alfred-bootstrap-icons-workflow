@@ -18,7 +18,7 @@ export const putSvg = (query: Query): string | null => {
 export const putName = (query: Query): string | null => {
   const icon = getIconObject(query);
   if (!icon) return null;
-  return `bi-${icon.name}`;
+  return `${icon.name}`;
 };
 
 export const putUrl = (query: Query): string | null => {
