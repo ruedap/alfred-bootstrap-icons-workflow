@@ -16,7 +16,8 @@ The current supported version is **Bootstrap Icons 1.0.0**. Previous versions ar
 ### macOS Catalina refuses to run unsigned binaries by default
 
 There are a few ways to allow such programs to run.  
-See: https://github.com/ruedap/alfred-font-awesome-workflow/issues/119
+See: https://github.com/ruedap/alfred-bootstrap-icons-workflow/issues/1
+
 
 ## Usage
 
