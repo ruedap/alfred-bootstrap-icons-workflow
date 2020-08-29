@@ -3,30 +3,33 @@ import { getAllIcons, toResponseItem } from "./icons";
 test("toResponseItem()", () => {
   const iconObject = {
     name: "bootstrap",
+    title: "Bootstrap",
+    categories: ["Bootstrap"],
+    tags: ["bootstrap"],
   };
 
   const actual = toResponseItem(iconObject);
   const expected = {
-    uid: "font-awesome",
-    title: "font-awesome",
-    subtitle: "Paste class name: fa-font-awesome",
-    arg: "font-awesome",
-    icon: { path: "./icons/font-awesome.png" },
+    uid: "bootstrap",
+    title: "bootstrap",
+    subtitle: "Paste class name: bi-bootstrap",
+    arg: "bootstrap",
+    icon: { path: "./icons/bootstrap.png" },
   };
   expect(actual).toStrictEqual(expected);
 });
 
 test("getAllIcons()", () => {
   const allIcons = getAllIcons();
-  expect(allIcons.items.length).toBe(1448);
+  expect(allIcons.items.length).toBe(1120);
 
-  const faIcon = allIcons.items.find((icon) => icon.uid === "font-awesome");
-  const faIconExpected = {
-    arg: "font-awesome",
-    icon: { path: "./icons/font-awesome.png" },
-    subtitle: "Paste class name: fa-font-awesome",
-    title: "font-awesome",
-    uid: "font-awesome",
+  const actual = allIcons.items.find((icon) => icon.uid === "bootstrap");
+  const expected = {
+    uid: "bootstrap",
+    title: "bootstrap",
+    subtitle: "Paste class name: bi-bootstrap",
+    arg: "bootstrap",
+    icon: { path: "./icons/bootstrap.png" },
   };
-  expect(faIcon).toStrictEqual(faIconExpected);
+  expect(actual).toStrictEqual(expected);
 });
