@@ -1,11 +1,12 @@
 import { getAllIconsObject } from "./assets/icons_object";
-import { putName, putUrl } from "./put";
+import { putSvg, putName, putUrl } from "./put";
 import { getArgs, getFlagArgs, includesFlag } from "./query";
 import { search, toJson } from "./search";
 
 const FLAG = {
   FIND: "--find",
   PUT: {
+    SVG: "--put-svg",
     NAME: "--put-name",
     URL: "--put-url",
   },
@@ -24,6 +25,13 @@ const main = (): void => {
     const query = getFlagArgs(args, FLAG.FIND);
     const searchResult = search(list, keys, query);
     output(toJson(searchResult));
+    return;
+  }
+
+  if (includesFlag(args, FLAG.PUT.SVG)) {
+    const query = getFlagArgs(args, FLAG.PUT.SVG);
+    const result = putSvg(query);
+    result && output(result);
     return;
   }
 

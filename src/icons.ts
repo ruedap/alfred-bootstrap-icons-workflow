@@ -5,7 +5,7 @@ export const toResponseItem = (iconObject: TIconObject): TResponseItem => {
   return {
     uid: iconObject.name,
     title: iconObject.name,
-    subtitle: `Paste class name: bi-${iconObject.name}`,
+    subtitle: `Paste SVG code`,
     arg: iconObject.name,
     icon: {
       path: `./icons/${iconObject.name}.png`,

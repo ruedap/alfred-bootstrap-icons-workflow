@@ -16,7 +16,7 @@ test("toResponseItem()", () => {
   const expected = {
     uid: "bootstrap",
     title: "bootstrap",
-    subtitle: "Paste class name: bi-bootstrap",
+    subtitle: "Paste SVG code",
     arg: "bootstrap",
     icon: { path: "./icons/bootstrap.png" },
   };
@@ -31,7 +31,7 @@ test("getAllIcons()", () => {
   const expected = {
     uid: "bootstrap",
     title: "bootstrap",
-    subtitle: "Paste class name: bi-bootstrap",
+    subtitle: "Paste SVG code",
     arg: "bootstrap",
     icon: { path: "./icons/bootstrap.png" },
   };
