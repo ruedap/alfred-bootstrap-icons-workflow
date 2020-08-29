@@ -5,6 +5,7 @@ export type TIconObject = Readonly<{
   title: string;
   categories: string[];
   tags: string[];
+  layout?: string;
 }>;
 
 export const getAllIconsObject = (): TIconObject[] => {
