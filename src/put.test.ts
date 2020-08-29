@@ -25,7 +25,7 @@ describe("putName()", () => {
 
   test("icon: bootstrap", () => {
     const actual = putName("bootstrap");
-    expect(actual).toBe("bi-bootstrap");
+    expect(actual).toBe("bootstrap");
   });
 });
 
