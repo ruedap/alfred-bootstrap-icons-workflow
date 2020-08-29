@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Bootstrap Icons 1.0.0.0</string>
 	<key>version</key>
-	<string></string>
+	<string>1.0.0.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/ruedap/alfred-bootstrap-icons-workflow</string>
 	<key>readme</key>
@@ -16,8 +16,6 @@
 	<string>Search through Bootstrap Icons</string>
 	<key>bundleid</key>
 	<string>com.ruedap.alfred-bootstrap-icons-workflow</string>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>disabled</key>
 	<false/>
 	<key>connections</key>
@@ -53,7 +51,7 @@
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>Open in browser</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -62,7 +60,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>53ADDDB0-7B5D-4796-9408-9CCD1559B07E</string>
+				<string>362F72F4-F4CF-4895-A7BD-DD237177DE39</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -189,25 +187,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>open {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
+				<key>browser</key>
 				<string></string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+				<key>utf8</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>53ADDDB0-7B5D-4796-9408-9CCD1559B07E</string>
+			<string>362F72F4-F4CF-4895-A7BD-DD237177DE39</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>uidata</key>
@@ -226,7 +220,7 @@
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
-		<key>53ADDDB0-7B5D-4796-9408-9CCD1559B07E</key>
+		<key>362F72F4-F4CF-4895-A7BD-DD237177DE39</key>
 		<dict>
 			<key>xpos</key>
 			<integer>495</integer>
