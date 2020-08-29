@@ -33,6 +33,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>532156A8-677E-4BA0-AA08-6AD07450EF19</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>33A0046F-1A97-4297-A964-049F47FFD791</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<array>
 			<dict>
@@ -40,6 +53,16 @@
 				<string>06C9C4A9-38CE-441A-8D06-E2F2D8B39B60</string>
 				<key>modifiers</key>
 				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>532156A8-677E-4BA0-AA08-6AD07450EF19</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
@@ -97,7 +120,7 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>./bootstrap-icons-workflow --put-name {query}</string>
+				<string>./bootstrap-icons-workflow --put-svg {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -169,6 +192,29 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
+				<string>./bootstrap-icons-workflow --put-name {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>532156A8-677E-4BA0-AA08-6AD07450EF19</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
 				<string>./bootstrap-icons-workflow --put-url {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -225,7 +271,14 @@
 			<key>xpos</key>
 			<integer>495</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>300</integer>
+		</dict>
+		<key>532156A8-677E-4BA0-AA08-6AD07450EF19</key>
+		<dict>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>175</integer>
 		</dict>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<dict>
@@ -239,7 +292,7 @@
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>300</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
