@@ -5,7 +5,7 @@
 
 You can incrementally search for [Bootstrap Icons](https://icons.getbootstrap.com/) and paste it to front most app.
 
-<img alt="screencast" src="https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/main/utils/screenshots/screencast.gif" width="700">
+<a href="https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases"><img alt="screencast" src="https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/main/utils/screenshots/screencast.gif" width="700"></a>
 
 ## Installation
 
