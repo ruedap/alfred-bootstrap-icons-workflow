@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Bootstrap Icons 1.0.0.0</string>
 	<key>version</key>
-	<string>1.0.0.0</string>
+	<string></string>
 	<key>webaddress</key>
 	<string>https://github.com/ruedap/alfred-bootstrap-icons-workflow</string>
 	<key>readme</key>
@@ -16,13 +16,17 @@
 	<string>Search through Bootstrap Icons</string>
 	<key>bundleid</key>
 	<string>com.ruedap.alfred-bootstrap-icons-workflow</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>disabled</key>
+	<false/>
 	<key>connections</key>
 	<dict>
-		<key>06116C11-3F9B-438E-A515-7D3CA35574BE</key>
+		<key>06C9C4A9-38CE-441A-8D06-E2F2D8B39B60</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>61DCB2DD-8EF7-447E-BED3-63AA4B73235C</string>
+				<string>33A0046F-1A97-4297-A964-049F47FFD791</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -31,11 +35,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
+		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2D5AC270-69DB-4E00-BE29-B7F4927E632A</string>
+				<string>06C9C4A9-38CE-441A-8D06-E2F2D8B39B60</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -45,66 +49,20 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>8EEB02DD-09BA-4657-A9D8-ACE675D342BC</string>
-				<key>modifiers</key>
-				<integer>262144</integer>
-				<key>modifiersubtext</key>
-				<string>Paste character reference</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>CE9A7E05-0277-46D5-941F-E5DEC7D9F6F7</string>
-				<key>modifiers</key>
-				<integer>131072</integer>
-				<key>modifiersubtext</key>
-				<string>Paste character code</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>06116C11-3F9B-438E-A515-7D3CA35574BE</string>
+				<string>CE7FD128-6CFF-469B-B17B-039CE356DB4E</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>Open in browser</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>2D5AC270-69DB-4E00-BE29-B7F4927E632A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8CBC1CA3-D946-4766-9551-505842A4BE52</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
 		</array>
-		<key>8EEB02DD-09BA-4657-A9D8-ACE675D342BC</key>
+		<key>CE7FD128-6CFF-469B-B17B-039CE356DB4E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8CBC1CA3-D946-4766-9551-505842A4BE52</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>CE9A7E05-0277-46D5-941F-E5DEC7D9F6F7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8CBC1CA3-D946-4766-9551-505842A4BE52</string>
+				<string>53ADDDB0-7B5D-4796-9408-9CCD1559B07E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -114,10 +72,25 @@
 			</dict>
 		</array>
 	</dict>
-	<key>disabled</key>
-	<false/>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>33A0046F-1A97-4297-A964-049F47FFD791</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -137,7 +110,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>2D5AC270-69DB-4E00-BE29-B7F4927E632A</string>
+			<string>06C9C4A9-38CE-441A-8D06-E2F2D8B39B60</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -157,7 +130,7 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>keyword</key>
-				<string>fa</string>
+				<string>bi</string>
 				<key>queuedelaycustom</key>
 				<integer>1</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -186,24 +159,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>21557827-8003-42B7-A042-16D4C9278FEC</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>8CBC1CA3-D946-4766-9551-505842A4BE52</string>
+			<string>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -215,7 +171,7 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>./bootstrap-icons-workflow --put-ref {query}</string>
+				<string>./bootstrap-icons-workflow --put-url {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -226,30 +182,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>8EEB02DD-09BA-4657-A9D8-ACE675D342BC</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>./bootstrap-icons-workflow --put-code {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>CE9A7E05-0277-46D5-941F-E5DEC7D9F6F7</string>
+			<string>CE7FD128-6CFF-469B-B17B-039CE356DB4E</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -272,84 +205,47 @@
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>61DCB2DD-8EF7-447E-BED3-63AA4B73235C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>./bootstrap-icons-workflow --put-url {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>06116C11-3F9B-438E-A515-7D3CA35574BE</string>
+			<string>53ADDDB0-7B5D-4796-9408-9CCD1559B07E</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
 	</array>
 	<key>uidata</key>
 	<dict>
-		<key>06116C11-3F9B-438E-A515-7D3CA35574BE</key>
+		<key>06C9C4A9-38CE-441A-8D06-E2F2D8B39B60</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<real>340</real>
+			<integer>50</integer>
 		</dict>
-		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
+		<key>33A0046F-1A97-4297-A964-049F47FFD791</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>495</integer>
 			<key>ypos</key>
-			<real>120</real>
+			<integer>50</integer>
 		</dict>
-		<key>2D5AC270-69DB-4E00-BE29-B7F4927E632A</key>
+		<key>53ADDDB0-7B5D-4796-9408-9CCD1559B07E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>495</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>180</integer>
 		</dict>
-		<key>61DCB2DD-8EF7-447E-BED3-63AA4B73235C</key>
+		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>700</integer>
+			<integer>50</integer>
 			<key>ypos</key>
-			<real>340</real>
+			<integer>50</integer>
 		</dict>
-		<key>8CBC1CA3-D946-4766-9551-505842A4BE52</key>
+		<key>CE7FD128-6CFF-469B-B17B-039CE356DB4E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>700</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<real>120</real>
-		</dict>
-		<key>8EEB02DD-09BA-4657-A9D8-ACE675D342BC</key>
-		<dict>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<real>120</real>
-		</dict>
-		<key>CE9A7E05-0277-46D5-941F-E5DEC7D9F6F7</key>
-		<dict>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<real>230</real>
+			<integer>180</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
