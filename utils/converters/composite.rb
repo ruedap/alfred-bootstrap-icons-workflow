@@ -1,5 +1,5 @@
 png = Dir.glob("./assets/icons/*.png")
-temporary_png = './converters/__temp.png'
+temporary_png = './utils/converters/__temp.png'
 puts `convert -size 128x128 xc:#ffffff #{temporary_png}`
 
 png.each do |p|
