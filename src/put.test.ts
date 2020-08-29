@@ -1,4 +1,4 @@
-import { putSvg, putName, putUrl } from "./put";
+import { putName, putSvg, putUrl } from "./put";
 
 describe("putSvg()", () => {
   test("empty", () => {

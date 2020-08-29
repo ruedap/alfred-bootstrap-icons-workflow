@@ -1,5 +1,5 @@
 import { getAllIconsObject } from "./assets/icons_object";
-import { putSvg, putName, putUrl } from "./put";
+import { putName, putSvg, putUrl } from "./put";
 import { getArgs, getFlagArgs, includesFlag } from "./query";
 import { search, toJson } from "./search";
 

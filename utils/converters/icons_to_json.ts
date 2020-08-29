@@ -23,11 +23,11 @@ const getFrontMatters = (): TIconObject[] => {
 };
 
 type Svg = Readonly<{
-  name: string
+  name: string;
   svg: {
-    raw: string
-  }
-}>
+    raw: string;
+  };
+}>;
 
 const getSvgs = (): Svg[] => {
   const icons = fg.sync("./bootstrap-icons/icons/*.svg");
@@ -39,9 +39,9 @@ const getSvgs = (): Svg[] => {
     return {
       name,
       svg: {
-        raw: svgRaw
-      }
-    } as Svg
+        raw: svgRaw,
+      },
+    } as Svg;
   });
 };
 
@@ -52,7 +52,7 @@ const main = () => {
   if (frontMatters.length !== svgs.length) {
     throw new Error("The numbers of frontMatters and svgs are different.");
   }
-  
+
   const obj: TIconObject[] = frontMatters.map((v, i) => {
     if (v.name !== svgs[i].name) {
       throw new Error("The name of frontMatters and svgs are different.");
@@ -61,10 +61,10 @@ const main = () => {
     return {
       ...v,
       svg: {
-        raw: svgs[i].svg.raw
-      }
-    } as TIconObject
-  })
+        raw: svgs[i].svg.raw,
+      },
+    } as TIconObject;
+  });
 
   const json = JSON.stringify(obj, null, 2);
   fs.writeFileSync("./assets/icons.json", json);
