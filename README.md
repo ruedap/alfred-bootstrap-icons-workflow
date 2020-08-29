@@ -5,6 +5,31 @@
 
 You can incrementally search for [Bootstrap Icons](https://icons.getbootstrap.com/) and paste it to front most app.
 
+## Installation
+
+Download **[Bootstrap-Icons.alfredworkflow](https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases)** and import to [Alfred](http://www.alfredapp.com/) (requires Powerpack).
+
+The current supported version is **Bootstrap Icons 1.0.0**. Previous versions are available [here](https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases).
+
+### macOS Catalina refuses to run unsigned binaries by default
+
+There are a few ways to allow such programs to run.  
+See: https://github.com/ruedap/alfred-font-awesome-workflow/issues/119
+
+## Usage
+
+**Keyword** `bi`: Search through [Bootstrap Icons](https://icons.getbootstrap.com/).
+
+- `Enter`: Paste class name (**for coding HTML/CSS**. e.g. `bi-arrow-right-circle
+`)
+- `Command + Enter`: Open in browser (e.g. <https://icons.getbootstrap.com/icons/arrow-right-circle/>)
+
+## Options
+
+**Disable pasting**: Turn off "Automatically paste to front most app" in Workflow's Preferences.
+
+![Disable pasting](https://github.com/ruedap/alfred-font-awesome-workflow/raw/master/screenshots/option-disable-pasting.png)
+
 ## Development
 
 ```sh
