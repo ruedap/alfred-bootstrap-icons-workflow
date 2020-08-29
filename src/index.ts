@@ -11,7 +11,11 @@ const FLAG = {
   },
 };
 
-const main = () => {
+const output = (str: string): void => {
+  process.stdout.write(str); // NOTE: Output to Alfred
+};
+
+const main = (): void => {
   const args = getArgs();
   const list = getAllIconsObject();
   const keys = ["name", "search.terms"];
@@ -19,26 +23,26 @@ const main = () => {
   if (includesFlag(args, FLAG.FIND)) {
     const query = getFlagArgs(args, FLAG.FIND);
     const searchResult = search(list, keys, query);
-    console.log(toJson(searchResult)); // NOTE: Output to Alfred
+    output(toJson(searchResult));
     return;
   }
 
   if (includesFlag(args, FLAG.PUT.NAME)) {
     const query = getFlagArgs(args, FLAG.PUT.NAME);
     const result = putName(query);
-    result && console.log(result); // NOTE: Output to Alfred
+    result && output(result);
     return;
   }
 
   if (includesFlag(args, FLAG.PUT.URL)) {
     const query = getFlagArgs(args, FLAG.PUT.URL);
     const result = putUrl(query);
-    result && console.log(result); // NOTE: Output to Alfred
+    result && output(result);
     return;
   }
 
   // NOTE: No flags
-  console.log(toJson(search(list, keys, ""))); // NOTE: Output to Alfred
+  output(toJson(search(list, keys, "")));
 };
 
 main();
