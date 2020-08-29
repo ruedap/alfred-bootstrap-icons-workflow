@@ -1,7 +1,10 @@
 import IconsJson from "@/assets/icons.json";
 
-type TIconObject = Readonly<{
+export type TIconObject = Readonly<{
   name: string;
+  title: string;
+  categories: string[];
+  tags: string[];
 }>;
 
 export const getAllIconsObject = (): TIconObject[] => {
