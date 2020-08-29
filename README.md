@@ -20,8 +20,7 @@ See: https://github.com/ruedap/alfred-font-awesome-workflow/issues/119
 
 **Keyword** `bi`: Search through [Bootstrap Icons](https://icons.getbootstrap.com/).
 
-- `Enter`: Paste class name (**for coding HTML/CSS**. e.g. `bi-arrow-right-circle
-`)
+- `Enter`: Paste class name (**for coding HTML/CSS**. e.g. `bi-arrow-right-circle `)
 - `Command + Enter`: Open in browser (e.g. <https://icons.getbootstrap.com/icons/arrow-right-circle/>)
 
 ## Options
