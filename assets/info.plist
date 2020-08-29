@@ -64,7 +64,7 @@
 				<key>modifiers</key>
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>Paste icon name: {query}</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>

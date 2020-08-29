@@ -31,7 +31,7 @@ See: https://github.com/ruedap/alfred-font-awesome-workflow/issues/119
 ```
 <!-- prettier-ignore-end -->
 
-- `Alt + Enter`: Paste icon name (e.g. `bootstrap`)
+- `Option + Enter`: Paste icon name (e.g. `bootstrap`)
 - `Command + Enter`: Open in browser (e.g. <https://icons.getbootstrap.com/icons/arrow-right-circle/>)
 
 ## Options
