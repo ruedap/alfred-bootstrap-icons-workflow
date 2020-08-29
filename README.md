@@ -5,7 +5,7 @@
 
 You can incrementally search for [Bootstrap Icons](https://icons.getbootstrap.com/) and paste it to front most app.
 
-<img alt="screencast" src="https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/main/utils/screenshots/screencast.gif" width="600">
+<img alt="screencast" src="https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/main/utils/screenshots/screencast.gif" width="700">
 
 ## Installation
 
@@ -40,7 +40,7 @@ See: https://github.com/ruedap/alfred-font-awesome-workflow/issues/119
 
 **Disable pasting**: Turn off "Automatically paste to front most app" in Workflow's Preferences.
 
-![Disable pasting](https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/main/utils/screenshots/option-disable-pasting.png)
+<img alt="Disable pasting" src="https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/main/utils/screenshots/option-disable-pasting.png" width="700">
 
 ## Development
 
