@@ -128,7 +128,6 @@ describe("search()", () => {
       ];
 
       expect(actual.length).toBe(3);
-      // FIXME: Is this correct?
       expect(actual).toStrictEqual(expected);
     });
   });
