@@ -237,7 +237,7 @@ describe("toJson()", () => {
     ];
     const actual = toJson(searchResult);
     const expected =
-      '{"items":[{"uid":"aaabbb","title":"aaabbb","subtitle":"Paste SVG code","arg":"aaabbb","icon":{"path":"./icons/aaabbb.png"}},{"uid":"bbbccc","title":"bbbccc","subtitle":"Paste SVG code","arg":"bbbccc","icon":{"path":"./icons/bbbccc.png"}},{"uid":"cccddd","title":"cccddd","subtitle":"Paste SVG code","arg":"cccddd","icon":{"path":"./icons/cccddd.png"}}]}';
+      '{"items":[{"title":"aaabbb","subtitle":"Paste SVG code","arg":"aaabbb","icon":{"path":"./icons/aaabbb.png"}},{"title":"bbbccc","subtitle":"Paste SVG code","arg":"bbbccc","icon":{"path":"./icons/bbbccc.png"}},{"title":"cccddd","subtitle":"Paste SVG code","arg":"cccddd","icon":{"path":"./icons/cccddd.png"}}]}';
 
     expect(actual).toStrictEqual(expected);
   });
