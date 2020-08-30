@@ -4,7 +4,7 @@
   "engines": {
     "node": "12.x"
   },
-  "description": "You can incrementally search for Font Awesome icons and paste it to front most app.",
+  "description": "You can incrementally search for Bootstrap Icons and paste it to front most app.",
   "scripts": {
     "clean": "rimraf ./dist && mkdirp ./dist && cpx './assets/{icons/*,icon.png,info.plist}' ./dist",
     "compile": "webpack",
@@ -13,15 +13,15 @@
     "build": "npm run clean && npm run compile && npm run package && npm run compress",
     "build:open": "npm run build && npm run open",
     "open": "open ./dist/Bootstrap-Icons.alfredworkflow",
-    "cmd:find": "./dist/bootstrap-icons-workflow --find bootstrap",
-    "cmd:put:svg": "./dist/bootstrap-icons-workflow --put-svg bootstrap",
-    "cmd:put:name": "./dist/bootstrap-icons-workflow --put-name bootstrap",
-    "cmd:put:url": "./dist/bootstrap-icons-workflow --put-url bootstrap",
-    "cmd:put": "npm run cmd:put:svg && npm run cmd:put:name && npm run cmd:put:url",
-    "cmd": "npm run cmd:find && npm run cmd:put",
     "exec": "npm run clean && npm run compile && node ./dist/index.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
+    "test:cmd:find": "./dist/bootstrap-icons-workflow --find bootstrap",
+    "test:cmd:put:svg": "./dist/bootstrap-icons-workflow --put-svg bootstrap",
+    "test:cmd:put:name": "./dist/bootstrap-icons-workflow --put-name bootstrap",
+    "test:cmd:put:url": "./dist/bootstrap-icons-workflow --put-url bootstrap",
+    "test:cmd:put": "npm run test:cmd:put:svg && npm run test:cmd:put:name && npm run test:cmd:put:url",
+    "test:cmd": "npm run test:cmd:find && npm run test:cmd:put",
     "fmt": "prettier --write .",
     "lint": "eslint . --ext 'ts,js'",
     "lint:fix": "eslint . --fix --ext 'ts,js'",
@@ -34,8 +34,7 @@
     "type": "git",
     "url": "git+https://github.com/ruedap/alfred-bootstrap-icons-workflow.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "ruedap",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ruedap/alfred-bootstrap-icons-workflow/issues"
