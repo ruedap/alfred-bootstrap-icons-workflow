@@ -19,11 +19,10 @@ const output = (str: string): void => {
 const main = (): void => {
   const args = getArgs();
   const list = getAllIconsObject();
-  const keys = ["name", "search.terms"];
 
   if (includesFlag(args, FLAG.FIND)) {
     const query = getFlagArgs(args, FLAG.FIND);
-    const searchResult = search(list, keys, query);
+    const searchResult = search(list, query);
     output(toJson(searchResult));
     return;
   }
@@ -50,7 +49,7 @@ const main = (): void => {
   }
 
   // NOTE: No flags
-  output(toJson(search(list, keys, "")));
+  output(toJson(search(list, "")));
 };
 
 main();
