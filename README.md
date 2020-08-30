@@ -26,15 +26,15 @@ See: https://github.com/ruedap/alfred-bootstrap-icons-workflow/issues/1
 
 <!-- prettier-ignore-start -->
 ```html
-<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bootstrap" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M12 1H4a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zM4 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4H4z"/>
-  <path fill-rule="evenodd" d="M8.537 12H5.062V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396zM6.375 4.658v2.467h1.558c1.16 0 1.764-.428 1.764-1.23 0-.78-.569-1.237-1.541-1.237H6.375zm1.898 6.229H6.375V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z"/>
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path fill-rule="evenodd" d="M5.172 10.828a.5.5 0 0 0 .707 0l4.096-4.096V9.5a.5.5 0 1 0 1 0V5.525a.5.5 0 0 0-.5-.5H6.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z"/>
 </svg>
 ```
 <!-- prettier-ignore-end -->
 
-- `Option + Enter`: Paste icon name (e.g. `bootstrap`)
-- `Command + Enter`: Open icon page in browser (e.g. <https://icons.getbootstrap.com/icons/arrow-right-circle/>)
+- `Option + Enter`: Paste icon name (e.g. `arrow-up-right-circle`)
+- `Command + Enter`: Open icon page in browser (e.g. <https://icons.getbootstrap.com/icons/arrow-up-right-circle/>)
 
 ## Options
 
