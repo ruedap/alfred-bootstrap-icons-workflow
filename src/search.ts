@@ -9,10 +9,17 @@ type TSearchResult = Readonly<{
   score: number;
 }>;
 
+const DEFAULT_KEYS = [
+  { name: "name", weight: 0.7 },
+  { name: "title", weight: 0.7 },
+  { name: "categories", weight: 0.3 },
+  { name: "tags", weight: 0.3 },
+];
+
 export const search = (
   list: TIconObject[],
-  keys: string[],
-  query: string
+  query: string,
+  keys?: string[]
 ): TSearchResult[] => {
   if (!query) {
     return list.map((item, i) => {
@@ -27,7 +34,7 @@ export const search = (
   const options = {
     includeScore: true,
     useExtendedSearch: true,
-    keys: keys,
+    keys: keys ?? DEFAULT_KEYS,
   } as const;
 
   const fuse = new Fuse(list, options, undefined);

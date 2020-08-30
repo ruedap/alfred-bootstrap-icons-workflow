@@ -19,7 +19,9 @@ type TText = Readonly<{
 }>;
 
 export type TResponseItem = Readonly<{
-  uid: string;
+  // NOTE: If you would like Alfred to always show the results in the order you return them from your script, exclude the UID field.
+  // https://www.alfredapp.com/help/workflows/inputs/script-filter/json/
+  uid?: string;
   title: string;
   subtitle: string;
   arg: string; // recommended

@@ -14,7 +14,6 @@ test("toResponseItem()", () => {
 
   const actual = toResponseItem(iconObject);
   const expected = {
-    uid: "bootstrap",
     title: "bootstrap",
     subtitle: "Paste SVG code",
     arg: "bootstrap",
@@ -27,9 +26,8 @@ test("getAllIcons()", () => {
   const allIcons = getAllIcons();
   expect(allIcons.items.length).toBe(1120);
 
-  const actual = allIcons.items.find((icon) => icon.uid === "bootstrap");
+  const actual = allIcons.items.find((icon) => icon.arg === "bootstrap");
   const expected = {
-    uid: "bootstrap",
     title: "bootstrap",
     subtitle: "Paste SVG code",
     arg: "bootstrap",

@@ -5,7 +5,7 @@
 
 You can incrementally search for [Bootstrap Icons](https://icons.getbootstrap.com/) and paste it to front most app.
 
-<a href="https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases"><img alt="screencast" src="https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/main/utils/screenshots/screencast.gif" width="700"></a>
+<a href="https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases"><img alt="screencast" src="https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/assets/images/screencast.gif" width="800"></a>
 
 ## Installation
 
@@ -17,7 +17,6 @@ The current supported version is **Bootstrap Icons 1.0.0**. Previous versions ar
 
 There are a few ways to allow such programs to run.  
 See: https://github.com/ruedap/alfred-bootstrap-icons-workflow/issues/1
-
 
 ## Usage
 
@@ -41,7 +40,7 @@ See: https://github.com/ruedap/alfred-bootstrap-icons-workflow/issues/1
 
 **Disable pasting**: Turn off "Automatically paste to front most app" in Workflow's Preferences.
 
-<img alt="Disable pasting" src="https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/main/utils/screenshots/option-disable-pasting.png" width="700">
+<img alt="Disable pasting" src="https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/assets/images/option-disable-pasting.png" width="800">
 
 ## Development
 

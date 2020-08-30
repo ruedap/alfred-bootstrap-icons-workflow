@@ -3,7 +3,6 @@ import { getAllIconsObject, TIconObject } from "./assets/icons_object";
 
 export const toResponseItem = (iconObject: TIconObject): TResponseItem => {
   return {
-    uid: iconObject.name,
     title: iconObject.name,
     subtitle: `Paste SVG code`,
     arg: iconObject.name,
