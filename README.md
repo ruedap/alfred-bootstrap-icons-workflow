@@ -1,15 +1,15 @@
 # Bootstrap Icons workflow for Alfred
 
-[![Latest Version](http://img.shields.io/github/release/ruedap/alfred-bootstrap-icons-workflow.svg?style=flat-square)](https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases)
+[![Latest Version](http://img.shields.io/github/release/ruedap/alfred-bootstrap-icons-workflow.svg?style=flat-square)](https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases/latest)
 [![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/ruedap/alfred-bootstrap-icons-workflow/blob/main/LICENSE.md)
 
 You can incrementally search for [Bootstrap Icons](https://icons.getbootstrap.com/) and paste it to front most app.
 
-<a href="https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases"><img alt="screencast" src="https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/assets/images/screencast.gif" width="800"></a>
+<a href="https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases/latest"><img alt="screencast" src="https://github.com/ruedap/alfred-bootstrap-icons-workflow/raw/assets/images/screencast.gif" width="800"></a>
 
 ## Installation
 
-Download **[Bootstrap-Icons.alfredworkflow](https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases)** and import to [Alfred](http://www.alfredapp.com/) (requires Powerpack).
+Download **[Bootstrap-Icons.alfredworkflow](https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases/latest)** and import to [Alfred](http://www.alfredapp.com/) (requires Powerpack).
 
 The current supported version is **Bootstrap Icons 1.0.0**. Previous versions are available [here](https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases).
 
