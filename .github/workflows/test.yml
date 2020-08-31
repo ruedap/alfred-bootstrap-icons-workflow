@@ -37,7 +37,7 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
 
       - name: Install node modules
-        run: npm i
+        run: npm ci
 
       - name: Run tests
         run: npm t

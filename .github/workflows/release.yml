@@ -20,7 +20,7 @@ jobs:
           node-version: "${{ env.NODE }}"
 
       - name: Install node modules
-        run: npm i
+        run: npm ci
 
       - name: Run tests
         run: npm t
