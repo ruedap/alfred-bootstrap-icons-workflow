@@ -11,7 +11,7 @@ jobs:
     steps:
       - run: echo "${{ github.event.head_commit.message }}"
 
-  build:
+  test:
     runs-on: macos-latest
     needs: prepare
     steps:
