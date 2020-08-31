@@ -35,14 +35,14 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
             ${{ runner.os }}-build-${{ env.cache-name }}-
 
-      - name: Install
+      - name: Install node modules
         run: npm i
 
-      - name: Tests
+      - name: Run tests
         run: npm t
 
-      - name: Build
+      - name: Build workflow file
         run: npm run build
 
-      - name: Test commands
+      - name: Run test commands
         run: npm run test:cmd
