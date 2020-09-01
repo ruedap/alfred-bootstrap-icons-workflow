@@ -1,4 +1,4 @@
-name-template: "Draft 🌈"
+name-template: "Draft 🚧"
 prerelease: false
 exclude-labels:
   - "skip-changelog"
