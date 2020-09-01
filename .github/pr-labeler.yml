@@ -1,6 +1,6 @@
 feature: ["feature/*", "feat/*"]
 fix: fix/*
 docs: docs/*
-deps: ["deps/*", "dependencies/*"]
 chore: chore/*
+deps: ["deps/*", "dependencies/*"]
 release: release/*
