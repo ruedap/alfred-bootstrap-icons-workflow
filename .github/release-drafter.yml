@@ -14,11 +14,12 @@ categories:
   - title: "📖 Docs"
     labels:
       - "docs"
+  - title: "🧰 Maintenance"
+    labels:
+      - "chore"
   - title: "📦 Dependencies"
     labels:
       - "deps"
-  - title: "🧰 Maintenance"
-    label: "chore"
 change-template: "- $TITLE (#$NUMBER) @$AUTHOR"
 template: |
   ## Changes
