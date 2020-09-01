@@ -1,0 +1,5 @@
+linter:
+  eslint:
+    dir:
+      - src
+      - utils
