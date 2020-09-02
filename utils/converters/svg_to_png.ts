@@ -14,7 +14,7 @@ type TSvg = Readonly<{
   output: string; // e.g. "./assets/icons/alarm.png pad 300:300"
 }>;
 
-const PARAMS = "pad 300:300";
+const PARAMS = "pad 128:128";
 
 const SVGS: TSvg[] = inputPaths.map((p: string) => {
   const name = path.parse(p).name;
@@ -24,8 +24,8 @@ const SVGS: TSvg[] = inputPaths.map((p: string) => {
   } as TSvg;
 });
 
-const convert = (svgs: TSvg[]) => {
-  svgexport.render(svgs, process);
+const convert = async (svgs: TSvg[]) => {
+  return svgexport.render(svgs, process);
 };
 
 const EXAMPLES = {
@@ -46,7 +46,8 @@ const EXAMPLES = {
 };
 
 const main = () => {
-  convert(EXAMPLES.SVGS);
+  console.log("start svg2png");
+  convert(SVGS);
 };
 
 main();

@@ -13,7 +13,6 @@ const outputDir = "./assets/icons";
 const outputPaths = fg.sync(`${outputDir}/*.png`);
 
 const composite = async (paths: string[]) => {
-  console.log("start composite");
   return await Promise.all(
     paths.map(async (p) => {
       const buffer = await sharp(p)
@@ -22,14 +21,13 @@ const composite = async (paths: string[]) => {
 
       await sharp(buffer).toFile(p, (err: Error, info: string) => {
         if (!err) return;
-        console.log({ err: err, info: info });
+        throw new Error(`${err}: ${p}`);
       });
     })
   );
 };
 
 const minify = async (paths: string[]) => {
-  console.log("start start");
   const destination = path.parse(paths[0]).dir;
   return await imagemin(paths, {
     destination,
@@ -50,11 +48,13 @@ const EXAMPLES = {
 };
 
 const main = async () => {
-  const paths = EXAMPLES.outputPaths;
+  const paths = outputPaths;
 
+  console.log("start composite");
   await composite(paths);
   console.log("end composite");
 
+  console.log("start minify");
   await minify(paths);
   console.log("end minify");
 
