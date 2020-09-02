@@ -2,7 +2,6 @@ name-template: "Draft 🚧"
 prerelease: false
 exclude-labels:
   - "skip-changelog"
-  - "release"
 categories:
   - title: "🚀 Features"
     labels:
