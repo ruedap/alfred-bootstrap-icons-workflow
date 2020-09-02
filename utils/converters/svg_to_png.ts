@@ -6,16 +6,17 @@ import path from "path";
 const svgexport = require("svgexport");
 
 const inputPaths = fg.sync("./bootstrap-icons/icons/*.svg");
-const outputPath = (name: string): string => `./assets/icons/${name}.png`;
+const outputDir = "./assets/icons";
+const outputPath = (name: string): string => `${outputDir}/${name}.png`;
 
 type TSvg = Readonly<{
   input: string; // e.g. "./bootstrap-icons/icons/alarm.svg"
-  output: string; // e.g. "./assets/icons2/alarm.png pad 300:300"
+  output: string; // e.g. "./assets/icons/alarm.png pad 300:300"
 }>;
 
 const PARAMS = "pad 300:300";
 
-const svgs: TSvg[] = inputPaths.map((p: string) => {
+const SVGS: TSvg[] = inputPaths.map((p: string) => {
   const name = path.parse(p).name;
   return {
     input: p,
@@ -23,34 +24,29 @@ const svgs: TSvg[] = inputPaths.map((p: string) => {
   } as TSvg;
 });
 
-const svgsExample: TSvg[] = [
-  {
-    input: `./bootstrap-icons/icons/alarm.svg`,
-    output: `./assets/icons2/alarm.png ${PARAMS}`,
-  },
-  {
-    input: `./bootstrap-icons/icons/alarm-fill.svg`,
-    output: `./assets/icons2/alarm-fill.png ${PARAMS}`,
-  },
-  {
-    input: `./bootstrap-icons/icons/alt.svg`,
-    output: `./assets/icons2/alt.png ${PARAMS}`,
-  },
-];
+const convert = (svgs: TSvg[]) => {
+  svgexport.render(svgs, process);
+};
 
-const convert = () => {
-  svgexport.render(svgs, (err: Error) => {
-    if (err) {
-      console.log(err);
-      process.exit(1);
-    } else {
-      console.log(`success!`);
-    }
-  });
+const EXAMPLES = {
+  SVGS: [
+    {
+      input: `./bootstrap-icons/icons/alarm.svg`,
+      output: `./assets/icons2/alarm.png ${PARAMS}`,
+    },
+    {
+      input: `./bootstrap-icons/icons/alarm-fill.svg`,
+      output: `./assets/icons2/alarm-fill.png ${PARAMS}`,
+    },
+    {
+      input: `./bootstrap-icons/icons/alt.svg`,
+      output: `./assets/icons2/alt.png ${PARAMS}`,
+    },
+  ],
 };
 
 const main = () => {
-  convert();
+  convert(EXAMPLES.SVGS);
 };
 
 main();
