@@ -33,7 +33,7 @@ const minify = async (paths: string[]) => {
     destination,
     plugins: [
       imageminPngquant({
-        quality: [0.3, 0.5],
+        quality: [0.2, 0.4],
       }),
     ],
   });
