@@ -21,6 +21,7 @@
   description: "Don't include in Release Drafter"
 
 # GitHub default labels
+
 - name: "bug"
   color: "d73a4a"
   description: "Something isn't working"
