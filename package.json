@@ -65,7 +65,7 @@
     "pkg": "4.4.9",
     "prettier": "2.1.1",
     "rimraf": "3.0.2",
-    "sharp": "0.25.4",
+    "sharp": "0.26.0",
     "svgexport": "0.4.1",
     "ts-jest": "26.3.0",
     "ts-loader": "8.0.3",
