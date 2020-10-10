@@ -61,7 +61,7 @@
     "imagemin-pngquant": "9.0.1",
     "jest": "26.5.0",
     "mkdirp": "1.0.4",
-    "organize-imports-cli": "0.7.0",
+    "organize-imports-cli": "0.8.0",
     "pkg": "4.4.9",
     "prettier": "2.1.2",
     "rimraf": "3.0.2",
