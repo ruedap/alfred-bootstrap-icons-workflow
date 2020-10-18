@@ -3,11 +3,9 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "tuesday"
-      time: "00:00"
+      interval: "monthly"
       timezone: "Asia/Tokyo"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 20
     labels:
       - "deps"
     versioning-strategy: "increase"
