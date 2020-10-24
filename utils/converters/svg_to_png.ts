@@ -46,8 +46,8 @@ const EXAMPLES = {
 };
 
 const main = () => {
-  console.log("start svg2png");
   convert(SVGS);
+  console.log("SVG2PNG successfully.");
 };
 
 main();

@@ -68,7 +68,9 @@ const main = () => {
 
   const json = JSON.stringify(obj, null, 2);
   fs.writeFileSync("./assets/icons.json", json);
-  console.log(`Output assets/icons.json for ${frontMatters.length} icons`);
+  console.log(
+    `Outputted assets/icons.json of ${frontMatters.length} icons successfully.`
+  );
 };
 
 main();
