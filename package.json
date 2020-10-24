@@ -31,7 +31,10 @@
     "utils:json": "ts-node ./utils/converters/icons_to_json.ts",
     "utils:svg2png": "rimraf ./assets/icons && mkdirp ./assets/icons && ts-node ./utils/converters/svg_to_png.ts",
     "utils:composite": "ts-node ./utils/converters/composite.ts",
-    "utils:icons": "npm run utils:svg2png && npm run utils:composite"
+    "utils:icons": "npm run utils:svg2png && npm run utils:composite",
+    "release:json": "npm run utils:json",
+    "release:icons": "npm run utils:svg2png && npm run utils:composite",
+    "release:build": "npm run build:open"
   },
   "repository": {
     "type": "git",
