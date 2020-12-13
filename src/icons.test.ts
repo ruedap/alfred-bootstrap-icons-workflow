@@ -24,7 +24,7 @@ test("toResponseItem()", () => {
 
 test("getAllIcons()", () => {
   const allIcons = getAllIcons();
-  expect(allIcons.items.length).toBe(1151);
+  expect(allIcons.items.length).toBe(1201);
 
   const actual = allIcons.items.find((icon) => icon.arg === "bootstrap");
   const expected = {
