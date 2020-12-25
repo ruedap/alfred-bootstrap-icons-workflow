@@ -9,4 +9,4 @@ updates:
     labels:
       - "deps"
     versioning-strategy: "increase"
-    rebase-strategy: "disabled"
+    rebase-strategy: "auto"
