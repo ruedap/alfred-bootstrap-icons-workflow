@@ -195,7 +195,7 @@ describe("search()", () => {
         },
         {
           item: {
-            categories: ["Misc"],
+            categories: ["Miscellaneous"],
             name: "bookmark-heart-fill",
             svg: {
               raw:
@@ -209,7 +209,7 @@ describe("search()", () => {
         },
         {
           item: {
-            categories: ["Misc"],
+            categories: ["Miscellaneous"],
             name: "bookmark-heart",
             svg: {
               raw:
