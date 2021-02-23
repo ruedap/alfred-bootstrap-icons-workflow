@@ -3,7 +3,7 @@ import { getAllIconsObject } from "./icons_object";
 describe("getAllIconsObject()", () => {
   test("length", () => {
     const obj = getAllIconsObject();
-    expect(obj.length).toBe(1201);
+    expect(obj.length).toBe(1265);
   });
 
   test("icon: bootstrap", () => {
