@@ -5,9 +5,9 @@ import path from "path";
 // eslint-disable-next-line
 const sharp = require("sharp");
 // eslint-disable-next-line
-const imagemin = require('imagemin');
+const imagemin = require("imagemin");
 // eslint-disable-next-line
-const imageminPngquant = require('imagemin-pngquant');
+const imageminPngquant = require("imagemin-pngquant");
 
 const outputDir = "./assets/icons";
 const outputPaths = fg.sync(`${outputDir}/*.png`);
