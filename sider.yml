@@ -1,5 +1,5 @@
 linter:
   eslint:
-    dir:
+    target:
       - src
       - utils
