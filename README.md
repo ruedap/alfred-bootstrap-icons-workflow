@@ -11,7 +11,7 @@ You can incrementally search for [Bootstrap Icons](https://icons.getbootstrap.co
 
 Download **[Bootstrap-Icons.alfredworkflow](https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases/latest)** and import to [Alfred](http://www.alfredapp.com/) (requires Powerpack).
 
-The current supported version is **Bootstrap Icons 1.4.1**. Previous versions are available [here](https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases).
+The current supported version is **Bootstrap Icons 1.5.0**. Previous versions are available [here](https://github.com/ruedap/alfred-bootstrap-icons-workflow/releases).
 
 ### macOS Catalina refuses to run unsigned binaries by default
 
