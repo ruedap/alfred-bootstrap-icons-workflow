@@ -50,7 +50,7 @@
     "@types/imagemin": "7.0.0",
     "@types/imagemin-pngquant": "8.0.0",
     "@types/jest": "26.0.23",
-    "@types/node": "14.17.3",
+    "@types/node": "14.17.4",
     "@types/sharp": "0.28.3",
     "@typescript-eslint/eslint-plugin": "4.26.1",
     "@typescript-eslint/parser": "4.26.1",
