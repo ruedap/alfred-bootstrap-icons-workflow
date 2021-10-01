@@ -62,7 +62,7 @@
     "front-matter": "4.0.2",
     "imagemin": "7.0.1",
     "imagemin-pngquant": "9.0.2",
-    "jest": "27.2.2",
+    "jest": "27.2.4",
     "mkdirp": "1.0.4",
     "organize-imports-cli": "0.8.0",
     "pkg": "5.3.2",
