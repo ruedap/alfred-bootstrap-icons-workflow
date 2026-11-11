@@ -65,7 +65,7 @@
     "jest": "27.2.5",
     "mkdirp": "1.0.4",
     "organize-imports-cli": "0.8.0",
-    "pkg": "5.3.3",
+    "pkg": "5.8.1",
     "prettier": "2.4.1",
     "rimraf": "3.0.2",
     "sharp": "0.29.3",
